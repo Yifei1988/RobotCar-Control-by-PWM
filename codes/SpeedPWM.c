@@ -1,3 +1,9 @@
+﻿/**********************************************************************
+build PWM to control dc motor
+函数说明：电机动作调速函数，
+放在定时器或主循环中，通过调用GetCGX返回的CGX值产生软PWM来控制机器人
+**********************************************************************/
+
 void SpeedPWM(char PWMLine){
 	char PWMLine_L = PWMLine;
 	char PWMLine_R = PWMLine;
